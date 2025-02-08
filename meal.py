@@ -96,14 +96,14 @@ def main():
     acc = input("Enter ID: ")
     pwd = input("Enter password: ")
 
+    meals = []
     while True:
-        day = input("Enter day of the week [1-5]: ")
-        name = input("Enter dish name in Chinese (partial is enough): ")
+        day = input("Enter day of the week (1-5): ")
+        dish_name = input("Enter dish name in Chinese (partial is enough): ")
+        meals.append((day, dish_name))
         while True:
-            choice = input("Add more dishes? [Y/N]: ").upper()[:1]
-            if choice == "Y":
-                break
-            elif choice == "N":
+            choice = input("Add more dishes? (Y/N): ").upper()[:1]
+            if choice in "YN":
                 break
 
         if choice == "N":
@@ -111,7 +111,7 @@ def main():
 
     input("Press [ENTER] to begin meal reservation: ")
     print("OK")
-    reserve_meals(acc or ACCOUNT, pwd or PASSWORD, [(day, name)])
+    reserve_meals(acc or ACCOUNT, pwd or PASSWORD, meals)
 
 
 if __name__ == "__main__":
