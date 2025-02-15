@@ -1,13 +1,14 @@
 # kcismeals
-Proof of Concept for automating meal reservation in KCIS, in Python.
-Web app currently under development
+Proof of concept (PoC) of automating meal reservation at Kang Chiao International School, written in Python.
+
+App is currently under development 👀
 
 ## Features
 ### Available
 + Automatically reserve meals of your choice
 + Fetch and analyze past receipts
 
-### Under Development
+### Coming Soon
 + Infer your meal preferences
 + GUI / Web app
 + Reservation scheduler
