@@ -98,7 +98,7 @@ def main():
 
     meals = []
     while True:
-        day = input("Enter day of the week (1-5): ")
+        day = int(input("Enter day of the week (1-5): "))
         dish_name = input("Enter dish name in Chinese (partial is enough): ")
         meals.append((day, dish_name))
         while True:
